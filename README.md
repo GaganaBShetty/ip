@@ -126,7 +126,7 @@ L – Represents Lightness.
 A – Color component ranging from Green to Magenta.
 B – Color component ranging from Blue to Yellow.
 
-YUV:Y refers to the luminance or intensity, and U/V channels represent color information. 
+YUV:Y refers to the luminance or intensity, and U/V channels represent color information. Y channel is the same as the grayscale image. It represents the intensity values. The U and V channels represent the color information
 
 
 
