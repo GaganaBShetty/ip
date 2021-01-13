@@ -1,4 +1,8 @@
 # ip
+
+program 1:a program to display grayscale image.
+description:
+
 import cv2
 import numpy as np
 
