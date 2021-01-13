@@ -199,8 +199,9 @@ c.waitKey(0)
 ![image](https://user-images.githubusercontent.com/72516233/104428110-e7c66300-5538-11eb-8374-1e9d2100f53a.png)
 
 ## 7. FIND THE NEIGHBORHOOD VALUES OF THE MATRIX.
-## DESCRIPTION:
-## PROGRAM CODE:
+## Description
+here for each elements of the matrix.We are going to find the corresponding sum of matrix.
+## Program code:
 
 import numpy as np
 M = [[1, 2, 3],
@@ -224,7 +225,7 @@ for i in range(M.shape[0]):
 print ("Original matrix:\n", M)
 print ("Summed neighbors matrix:\n", N)
 
-## OUTPUT:
+# Output:
 Original matrix:
  [[1 2 3]
  [4 5 6]
