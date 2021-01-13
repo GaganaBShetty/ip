@@ -20,7 +20,7 @@ cv2.imshow('Art_Girl', numpy_horizontal_concat)
 cv2.waitKey()
 
 Output:
-![image](https://user-images.githubusercontent.com/72516233/104419669-cac47b00-559e-11eb-9866-9b91ebf0fe84.png)
+![image](https://user-images.githubusercontent.com/72516233/104425714-d9c31300-5535-11eb-8d11-9ed6b741e5cd.png)
 
 
 Program 2:Develop a program to perform linear transformation on image.
