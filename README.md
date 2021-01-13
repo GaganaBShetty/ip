@@ -19,6 +19,7 @@ numpy_horizontal_concat = np.concatenate((image, grey_3_channel), axis=1)
 cv2.imshow('Art_Girl', numpy_horizontal_concat)
 cv2.waitKey()
 
+Output:
 ![image](https://user-images.githubusercontent.com/72516233/104419669-cac47b00-559e-11eb-9866-9b91ebf0fe84.png)
 
 
@@ -40,5 +41,5 @@ except IOError:
     cv2.waitKey(0)
     cv2.destroyAllWindows(0)
 
-output:
-![image](https://user-images.githubusercontent.com/72516233/104425344-6b7e5080-5535-11eb-86c7-1ba37d4c4c66.png)
+Output:
+![image](https://user-images.githubusercontent.com/72516233/104425520-a2546680-5535-11eb-9292-1eb33d037171.png)
