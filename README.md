@@ -86,3 +86,18 @@ Output:
 ![image](https://user-images.githubusercontent.com/72516233/104426602-0166ab00-5537-11eb-852b-e1f13fac9f83.png)
 
 
+Program 4:Write a program to convert color image into gray scale and binary image.
+import cv2
+img = cv2.imread("BRUSH.jpg")
+gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+cv2.imshow("Binary Image",gray)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+ret, bw_img = cv2.threshold(img,127,255,cv2.THRESH_BINARY)
+cv2.imshow("Binary Image",bw_img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+Output:
+
+
