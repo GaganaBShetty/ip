@@ -200,7 +200,8 @@ c.waitKey(0)
 
 ## 7. FIND THE NEIGHBORHOOD VALUES OF THE MATRIX.
 ## Description
-here for each elements of the matrix.We are going to find the corresponding sum of matrix.
+Here for each elements of the matrix.We are going to find the corresponding sum of matrix.
+numpy.zeros()or np.zeros Python function is used to create a matrix full of zeros.numpy.zeros() in python can be used when you initialize the weights.
 ## Program code:
 
 import numpy as np
