@@ -91,6 +91,9 @@ Output:
 
 Program 4:Write a program to convert color image into gray scale and binary image.
 
+Description:A grayscale (or graylevel) image is simply one in which the only colors are shades of gray. The reason for differentiating such images from any other sort of color image is that less information needs to be provided for each pixel. 
+
+
 
 import cv2
 img = cv2.imread("BRUSH.jpg")
