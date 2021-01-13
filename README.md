@@ -126,6 +126,10 @@ L – Represents Lightness.
 A – Color component ranging from Green to Magenta.
 B – Color component ranging from Blue to Yellow.
 
+YUV:Y refers to the luminance or intensity, and U/V channels represent color information. 
+
+
+
 
 
 import cv2
