@@ -62,24 +62,6 @@ Output:
 
 Program 3:Develop a program to find sum and mean of a set of images.
 Create n number of images and read the directory and perform operation.
-import cv2
-import os
-path = "E:\ART"
-imgs=[]
-dirs=os.listdir(path)
-
-for file in dirs:
-    fpat=path+"\\"+file
-    imgs.append(cv2.imread(fpat))
-    
-i=0
-for im in imgs:
-    cv2.imshow(dirs[i],imgs[i])
-    i=i+1
-print(i)
-cv2.imshow('sum',len(im))
-cv2.imshow('mean',len(im)/im)
-cv2.waitKey(0)
 
 
 Output:
