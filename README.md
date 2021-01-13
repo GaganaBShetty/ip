@@ -197,3 +197,30 @@ c.waitKey(0)
 
 ## OUTPUT:
 ![image](https://user-images.githubusercontent.com/72516233/104428110-e7c66300-5538-11eb-8374-1e9d2100f53a.png)
+
+## 7. FIND THE NEIGHBORHOOD VALUES OF THE MATRIX.
+## DESCRIPTION:
+## PROGRAM CODE:
+
+import numpy as np
+M = [[1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]] 
+M = np.asarray(M)
+N = np.zeros(M.shape)
+def sumNeighbors(M,x,y):
+    l = []
+    for i in range(max(0,x-1),x+2): # max(0,x-1), such that no negative values in range() 
+        for j in range(max(0,y-1),y+2):
+            try:
+                t = M[i][j]
+                l.append(t)
+            except IndexError: # if entry doesn't exist
+                pass
+    return sum(l)-M[x][y] # exclude the entry itself
+for i in range(M.shape[0]):
+    for j in range(M.shape[1]):
+        N[i][j] = sumNeighbors(M, i, j)
+print ("Original matrix:\n", M)
+print ("Summed neighbors matrix:\n", N)
+
