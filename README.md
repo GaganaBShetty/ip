@@ -43,3 +43,20 @@ except IOError:
 
 Output:
 ![image](https://user-images.githubusercontent.com/72516233/104425520-a2546680-5535-11eb-9292-1eb33d037171.png)
+
+Program 2.b:
+import cv2 
+import numpy as np 
+  
+FILE_NAME = ‘brush.jpg'
+img = cv2.imread(FILE_NAME) 
+(rows, cols) = img.shape[:2] 
+M = cv2.getRotationMatrix2D((cols / 2, rows / 2), 45, 1) 
+res = cv2.warpAffine(img, M, (cols, rows)) 
+cv2.imshow('result.jpg', res) 
+cv2.waitKey(0)
+
+Output:
+
+
+
