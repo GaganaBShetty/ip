@@ -87,6 +87,8 @@ Output:
 
 
 Program 4:Write a program to convert color image into gray scale and binary image.
+
+
 import cv2
 img = cv2.imread("BRUSH.jpg")
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
@@ -102,3 +104,32 @@ Output:
 ![image](https://user-images.githubusercontent.com/72516233/104426936-7639e500-5537-11eb-991e-9b0676cb7d74.png)
 
 
+Program 5:Write a program to convert color image into different color space.
+import cv2
+img = cv2.imread("ACRYLIC.jpg")
+gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB)
+hls=cv2.cvtColor(img,cv2.COLOR_BGR2HLS)
+yuv=cv2.cvtColor(img,cv2.COLOR_BGR2YUV)
+
+cv2.imshow("GRAY image",gray)
+cv2.waitKey(0)
+
+cv2.imshow("HSV image",hsv)
+cv2.waitKey(0)
+
+cv2.imshow("LAB image",lab)
+cv2.waitKey(0)
+
+cv2.imshow("HLS image",hls)
+cv2.waitKey(0)
+
+cv2.imshow("YUV image",yuv)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+ret, bw_img = cv2.threshold(img,127,255,cv2.THRESH_BINARY)
+cv2.destroyAllWindows()
+
+
+Output:
