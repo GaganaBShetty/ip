@@ -25,6 +25,8 @@ Output:
 
 Program 2:Develop a program to perform linear transformation on image.
 
+Description:A linear transformation is a function from one vector space to another that respects the underlying (linear) structure of each vector space. A linear transformation is also known as a linear operator or map. The range of the transformation may be the same as the domain, and when that happens, the transformation is known as an endomorphism or, if invertible, an automorphism. The two vector spaces must have the same underlying field.
+
 import cv2
 import numpy as np
 FILE_NAME = 'art.jpg'
