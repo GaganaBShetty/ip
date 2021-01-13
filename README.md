@@ -149,3 +149,7 @@ img = Image.fromarray(array)
 img.save('COLORS.jpg')
 img.show()
 c.waitKey(0)
+
+
+Output:
+![image](https://user-images.githubusercontent.com/72516233/104428110-e7c66300-5538-11eb-8374-1e9d2100f53a.png)
