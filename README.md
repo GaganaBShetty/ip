@@ -65,6 +65,9 @@ Output:
 Program 3:Develop a program to find sum and mean of a set of images.
 Create n number of images and read the directory and perform operation.
 
+Description:listdir() returns a list containing the names of the entries in the directory given by path. The list is in arbitrary order. It does not include the special entries '.' and '..' even if they are present in the directory.
+
+
 import cv2
 import os
 path = 'C:\Users\MCA\Downloads\gagana'
