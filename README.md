@@ -84,7 +84,7 @@ cv2.imshow("mean of four pictures",meanImg)
 cv2.waitKey(0)
 
 Output:
-![image](https://user-images.githubusercontent.com/72516233/104426602-0166ab00-5537-11eb-852b-e1f13fac9f83.png)
+![image](https://user-images.githubusercontent.com/72516233/104429155-2577bb80-553a-11eb-92bd-b90464f10e0c.png)
 
 
 Program 4:Write a program to convert color image into gray scale and binary image.
