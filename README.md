@@ -128,8 +128,9 @@ B – Color component ranging from Blue to Yellow.
 
 YUV:Y refers to the luminance or intensity, and U/V channels represent color information. Y channel is the same as the grayscale image. It represents the intensity values. The U and V channels represent the color information
 
+HSL (Hue Saturation Lightness): very similar to HSV and used in image editing softwares as well
 
-
+Grayscale image contains only single channel. Pixel intensities in this color space is represented by values ranging from 0 to 255. Thus, number of possibilities for one color represented by a pixel is 256.
 
 
 import cv2
