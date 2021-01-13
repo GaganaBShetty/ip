@@ -1,8 +1,11 @@
 # ip
 
-Program 1: A PROGRAM TO DISPLAY GRAYSCALE IMAGE USING READ AND WRITE OPERATION.
-description:Grayscaling is the process of converting an image from other color spaces e.g RGB, CMYK, HSV, etc. to shades of gray. It varies between complete black and complete white.To display an image on the window, we have a function cv2.imshow(). This function creates a window and displays the image with the original size.The function has two parameters. The first parameter is a string that describes the name of the window. The second parameter is the image array which contains the image data.cv2.waitKey() function waits for a keyboard interrupt for a specific amount of time in milliseconds. The next function cv2.destroyAllWindows() closes all the windows in which images are displayed.
+## Program 1: A PROGRAM TO DISPLAY GRAYSCALE IMAGE USING READ AND WRITE OPERATION.
+## DESCRIPTION
+## Grayscaling 
+is the process of converting an image from other color spaces e.g RGB, CMYK, HSV, etc. to shades of gray. It varies between complete black and complete white.To display an image on the window, we have a function cv2.imshow(). This function creates a window and displays the image with the original size.The function has two parameters. The first parameter is a string that describes the name of the window. The second parameter is the image array which contains the image data.cv2.waitKey() function waits for a keyboard interrupt for a specific amount of time in milliseconds. The next function cv2.destroyAllWindows() closes all the windows in which images are displayed.
 
+## PROGRAM CODE:
 import cv2
 import numpy as np
 
@@ -18,14 +21,16 @@ numpy_horizontal_concat = np.concatenate((image, grey_3_channel), axis=1)
 cv2.imshow('Art_Girl', numpy_horizontal_concat)
 cv2.waitKey()
 
-Output:
+## OUTPUT:
 ![image](https://user-images.githubusercontent.com/72516233/104425714-d9c31300-5535-11eb-8d11-9ed6b741e5cd.png)
 
 
-Program 2:DEVELOP A PROGRAM TO PERFORM LINEAR TRANSFORMATION ON IMAGE.
+## Program 2:DEVELOP A PROGRAM TO PERFORM LINEAR TRANSFORMATION ON IMAGE.
 
-Description:A linear transformation is a function from one vector space to another that respects the underlying (linear) structure of each vector space. A linear transformation is also known as a linear operator or map. The range of the transformation may be the same as the domain, and when that happens, the transformation is known as an endomorphism or, if invertible, an automorphism. The two vector spaces must have the same underlying field.Linear transformations are useful because they preserve the structure of a vector space. So, many qualitative assessments of a vector space that is the domain of a linear transformation may, under certain conditions, automatically hold in the image of the linear transformation. For instance, the structure immediately gives that the kernel and image are both subspaces (not just subsets) of the range of the linear transformation.
+## DESCRIPTION:
+A linear transformation is a function from one vector space to another that respects the underlying (linear) structure of each vector space. A linear transformation is also known as a linear operator or map. The range of the transformation may be the same as the domain, and when that happens, the transformation is known as an endomorphism or, if invertible, an automorphism. The two vector spaces must have the same underlying field.Linear transformations are useful because they preserve the structure of a vector space. So, many qualitative assessments of a vector space that is the domain of a linear transformation may, under certain conditions, automatically hold in the image of the linear transformation. For instance, the structure immediately gives that the kernel and image are both subspaces (not just subsets) of the range of the linear transformation.
 
+## PROGRAM CODE
 import cv2
 import numpy as np
 FILE_NAME = 'art.jpg'
@@ -42,7 +47,7 @@ except IOError:
     cv2.waitKey(0)
     cv2.destroyAllWindows(0)
 
-Output:
+## OUTPUT:
 ![image](https://user-images.githubusercontent.com/72516233/104425520-a2546680-5535-11eb-9292-1eb33d037171.png)
 
 Program 2.b:
@@ -57,16 +62,17 @@ res = cv2.warpAffine(img, M, (cols, rows))
 cv2.imshow('result.jpg', res) 
 cv2.waitKey(0)
 
-Output:
+## OUTPUT:
 ![image](https://user-images.githubusercontent.com/72516233/104426247-8dc49e00-5536-11eb-8d95-507a4966eecf.png)
 
 
-Program 3:DEVELOP A PROGRAM TO FIND SUM AND MEAN OF A SET OF IMAGES.
+## Program 3:DEVELOP A PROGRAM TO FIND SUM AND MEAN OF A SET OF IMAGES.
 CREATE N NUMBER OF IMAGES AND READ THE DIRECTORY AND PERFORM OPERATION.
 
 Description:listdir() returns a list containing the names of the entries in the directory given by path. The list is in arbitrary order. It does not include the special entries '.' and '..' even if they are present in the directory.
 append:this method adds a single item to the existing list.
 
+## PROGRAM CODE
 
 import cv2
 import os
@@ -88,14 +94,15 @@ meanImg = im/len(files)
 cv2.imshow("mean of four pictures",meanImg)
 cv2.waitKey(0)
 
-Output:
+## OUTPUT:
 ![image](https://user-images.githubusercontent.com/72516233/104429155-2577bb80-553a-11eb-92bd-b90464f10e0c.png)
 
 
-Program 4:WRITE A PROGRAM TO CONVERT COLOR IMAGE INTO GRAY SCALE AND BINARY IMAGE.
+## Program 4:WRITE A PROGRAM TO CONVERT COLOR IMAGE INTO GRAY SCALE AND BINARY IMAGE.
 
 
-Description:A grayscale (or graylevel) image is simply one in which the only colors are shades of gray. The reason for differentiating such images from any other sort of color image is that less information needs to be provided for each pixel. Gray Scale Image :
+## DESCRIPTION:
+A grayscale (or graylevel) image is simply one in which the only colors are shades of gray. The reason for differentiating such images from any other sort of color image is that less information needs to be provided for each pixel. Gray Scale Image :
 Grayscale image contains only single channel. Pixel intensities in this color space is represented by values ranging from 0 to 255. Thus, number of possibilities for one color represented by a pixel is 256.
 
 BW = im2bw(I,level) converts the grayscale image I to binary image BW, by replacing all pixels in the input image with luminance greater than level with the value 1 (white) and replacing all other pixels with the value 0 (black).
@@ -113,29 +120,31 @@ cv2.imshow("Binary Image",bw_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-Output:
+## OUTPUT:
 ![image](https://user-images.githubusercontent.com/72516233/104426936-7639e500-5537-11eb-991e-9b0676cb7d74.png)
 
 
-Program 5:WRITE A PROGRAM TO CONVERT COLOR IMAGE INTO DIFFERENT COLOR SPACE.
+## Program 5:WRITE A PROGRAM TO CONVERT COLOR IMAGE INTO DIFFERENT COLOR SPACE.
 Description:
-HSV color space :
+## HSV color space :
 H : Hue represents dominant wavelength.
 S : Saturation represents shades of color.
 V : Value represents Intensity.
 
-LAB color space :
+## LAB color space :
 L – Represents Lightness.
 A – Color component ranging from Green to Magenta.
 B – Color component ranging from Blue to Yellow.
 
-YUV:Y refers to the luminance or intensity, and U/V channels represent color information. Y channel is the same as the grayscale image. It represents the intensity values. The U and V channels represent the color information
+## YUV:
+Y refers to the luminance or intensity, and U/V channels represent color information. Y channel is the same as the grayscale image. It represents the intensity values. The U and V channels represent the color information
 
-HSL (Hue Saturation Lightness): very similar to HSV and used in image editing softwares as well
+## HSL (Hue Saturation Lightness): very similar to HSV and used in image editing softwares as well
 
-Grayscale image contains only single channel. Pixel intensities in this color space is represented by values ranging from 0 to 255. Thus, number of possibilities for one color represented by a pixel is 256.
+## Grayscale:
+image contains only single channel. Pixel intensities in this color space is represented by values ranging from 0 to 255. Thus, number of possibilities for one color represented by a pixel is 256.
 
-
+## PROGRAM CODE
 import cv2
 img = cv2.imread("ACRYLIC.jpg")
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
@@ -163,12 +172,13 @@ ret, bw_img = cv2.threshold(img,127,255,cv2.THRESH_BINARY)
 cv2.destroyAllWindows()
 
 
-Output:
+## OUTPUT:
 ![image](https://user-images.githubusercontent.com/72516233/104427227-da5ca900-5537-11eb-9e91-01614764ab98.png)
 
 
-Program 6:A PROGRAM TO CREATE AN IMAGE FROM 2D ARRAY.
+## Program 6:A PROGRAM TO CREATE AN IMAGE FROM 2D ARRAY.
 
+## PROGRAM CODE
 import numpy as np
 from PIL import Image
 import cv2 as c 
@@ -182,5 +192,5 @@ img.show()
 c.waitKey(0)
 
 
-Output:
+## OUTPUT:
 ![image](https://user-images.githubusercontent.com/72516233/104428110-e7c66300-5538-11eb-8374-1e9d2100f53a.png)
