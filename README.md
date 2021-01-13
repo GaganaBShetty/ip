@@ -57,6 +57,8 @@ cv2.imshow('result.jpg', res)
 cv2.waitKey(0)
 
 Output:
+![image](https://user-images.githubusercontent.com/72516233/104426247-8dc49e00-5536-11eb-8d95-507a4966eecf.png)
+
 
 
 
