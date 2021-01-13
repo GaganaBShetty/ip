@@ -63,6 +63,25 @@ Output:
 Program 3:Develop a program to find sum and mean of a set of images.
 Create n number of images and read the directory and perform operation.
 
+import cv2
+import os
+path = 'C:\Users\MCA\Downloads\gagana'
+imgs = []
+
+files = os.listdir(path)
+for file in files:
+    filepath=path+"\\"+file
+    imgs.append(cv2.imread(filepath))
+i=0
+im = []
+for im in imgs:
+    #cv2.imshow(files[i],imgs[i])
+    im+=imgs[i]
+    i=i+1
+cv2.imshow("sum of four pictures",im)
+meanImg = im/len(files)
+cv2.imshow("mean of four pictures",meanImg)
+cv2.waitKey(0)
 
 Output:
 ![image](https://user-images.githubusercontent.com/72516233/104426602-0166ab00-5537-11eb-852b-e1f13fac9f83.png)
