@@ -178,6 +178,9 @@ cv2.destroyAllWindows()
 
 ## Program 6:A PROGRAM TO CREATE AN IMAGE FROM 2D ARRAY.
 
+## DESCRIPTION:
+## 2d ARRAY:
+Two dimensional array is an array within an array. It is an array of arrays. In this type of array the position of an data element is referred by two indices instead of one. So it represents a table with rows an dcolumns of data. In the below example of a two dimensional array, observer that each array element itself is also an array.
 ## PROGRAM CODE
 import numpy as np
 from PIL import Image
