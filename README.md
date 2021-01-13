@@ -1,7 +1,6 @@
 # ip
 
-Program 1:a program to display grayscale image using read and write operation .
-
+Program 1: A PROGRAM TO DISPLAY GRAYSCALE IMAGE USING READ AND WRITE OPERATION.
 description:Grayscaling is the process of converting an image from other color spaces e.g RGB, CMYK, HSV, etc. to shades of gray. It varies between complete black and complete white.To display an image on the window, we have a function cv2.imshow(). This function creates a window and displays the image with the original size.The function has two parameters. The first parameter is a string that describes the name of the window. The second parameter is the image array which contains the image data.cv2.waitKey() function waits for a keyboard interrupt for a specific amount of time in milliseconds. The next function cv2.destroyAllWindows() closes all the windows in which images are displayed.
 
 import cv2
@@ -23,7 +22,7 @@ Output:
 ![image](https://user-images.githubusercontent.com/72516233/104425714-d9c31300-5535-11eb-8d11-9ed6b741e5cd.png)
 
 
-Program 2:Develop a program to perform linear transformation on image.
+Program 2:DEVELOP A PROGRAM TO PERFORM LINEAR TRANSFORMATION ON IMAGE.
 
 Description:A linear transformation is a function from one vector space to another that respects the underlying (linear) structure of each vector space. A linear transformation is also known as a linear operator or map. The range of the transformation may be the same as the domain, and when that happens, the transformation is known as an endomorphism or, if invertible, an automorphism. The two vector spaces must have the same underlying field.Linear transformations are useful because they preserve the structure of a vector space. So, many qualitative assessments of a vector space that is the domain of a linear transformation may, under certain conditions, automatically hold in the image of the linear transformation. For instance, the structure immediately gives that the kernel and image are both subspaces (not just subsets) of the range of the linear transformation.
 
@@ -62,8 +61,8 @@ Output:
 ![image](https://user-images.githubusercontent.com/72516233/104426247-8dc49e00-5536-11eb-8d95-507a4966eecf.png)
 
 
-Program 3:Develop a program to find sum and mean of a set of images.
-Create n number of images and read the directory and perform operation.
+Program 3:DEVELOP A PROGRAM TO FIND SUM AND MEAN OF A SET OF IMAGES.
+CREATE N NUMBER OF IMAGES AND READ THE DIRECTORY AND PERFORM OPERATION.
 
 Description:listdir() returns a list containing the names of the entries in the directory given by path. The list is in arbitrary order. It does not include the special entries '.' and '..' even if they are present in the directory.
 
@@ -92,7 +91,8 @@ Output:
 ![image](https://user-images.githubusercontent.com/72516233/104429155-2577bb80-553a-11eb-92bd-b90464f10e0c.png)
 
 
-Program 4:Write a program to convert color image into gray scale and binary image.
+Program 4:WRITE A PROGRAM TO CONVERT COLOR IMAGE INTO GRAY SCALE AND BINARY IMAGE.
+
 
 Description:A grayscale (or graylevel) image is simply one in which the only colors are shades of gray. The reason for differentiating such images from any other sort of color image is that less information needs to be provided for each pixel. Gray Scale Image :
 Grayscale image contains only single channel. Pixel intensities in this color space is represented by values ranging from 0 to 255. Thus, number of possibilities for one color represented by a pixel is 256.
@@ -116,8 +116,7 @@ Output:
 ![image](https://user-images.githubusercontent.com/72516233/104426936-7639e500-5537-11eb-991e-9b0676cb7d74.png)
 
 
-Program 5:Write a program to convert color image into different color space.
-
+Program 5:WRITE A PROGRAM TO CONVERT COLOR IMAGE INTO DIFFERENT COLOR SPACE.
 Description:
 HSV color space :
 H : Hue represents dominant wavelength.
@@ -167,7 +166,7 @@ Output:
 ![image](https://user-images.githubusercontent.com/72516233/104427227-da5ca900-5537-11eb-9e91-01614764ab98.png)
 
 
-Program 6:Develop a program to create an image from 2D array.
+Program 6:A PROGRAM TO CREATE AN IMAGE FROM 2D ARRAY.
 
 import numpy as np
 from PIL import Image
