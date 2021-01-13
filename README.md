@@ -1,7 +1,7 @@
 # ip
 
 program 1:a program to display grayscale image.
-description:
+description:Grayscaling is the process of converting an image from other color spaces e.g RGB, CMYK, HSV, etc. to shades of gray. It varies between complete black and complete white.
 
 import cv2
 import numpy as np
