@@ -135,3 +135,17 @@ cv2.destroyAllWindows()
 Output:
 ![image](https://user-images.githubusercontent.com/72516233/104427227-da5ca900-5537-11eb-9e91-01614764ab98.png)
 
+
+Program 6:Develop a program to create an image from 2D array.
+
+import numpy as np
+from PIL import Image
+import cv2 as c 
+array = np.zeros([100, 200, 3], dtype=np.uint8)
+array[:,:100] = [150, 128, 0] #Orange left side
+array[:,100:] = [0, 0, 255]   #Blue right side
+
+img = Image.fromarray(array)
+img.save('COLORS.jpg')
+img.show()
+c.waitKey(0)
