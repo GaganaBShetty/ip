@@ -40,3 +40,5 @@ except IOError:
     cv2.waitKey(0)
     cv2.destroyAllWindows(0)
 
+output:
+![image](https://user-images.githubusercontent.com/72516233/104425344-6b7e5080-5535-11eb-86c7-1ba37d4c4c66.png)
