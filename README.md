@@ -121,6 +121,13 @@ H : Hue represents dominant wavelength.
 S : Saturation represents shades of color.
 V : Value represents Intensity.
 
+LAB color space :
+L – Represents Lightness.
+A – Color component ranging from Green to Magenta.
+B – Color component ranging from Blue to Yellow.
+
+
+
 import cv2
 img = cv2.imread("ACRYLIC.jpg")
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
