@@ -65,6 +65,7 @@ Program 3:DEVELOP A PROGRAM TO FIND SUM AND MEAN OF A SET OF IMAGES.
 CREATE N NUMBER OF IMAGES AND READ THE DIRECTORY AND PERFORM OPERATION.
 
 Description:listdir() returns a list containing the names of the entries in the directory given by path. The list is in arbitrary order. It does not include the special entries '.' and '..' even if they are present in the directory.
+append:this method adds a single item to the existing list.
 
 
 import cv2
