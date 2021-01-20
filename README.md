@@ -260,39 +260,149 @@ a :  [[1 2 3 4 5]
 
 [[2, 3, 4], [3, 4, 5], [4, 5, 6]]
 
-## 9.Sum of neighbors
+## 9.C++ Programs to perform operator overloading.
 ## Program code:
-import numpy as np
-def sumNeighbors(M,x,y):
-    l = []
-    for i in range(max(0,x-1),x+2):
-        for j in range(max(0,y-1),y+2):
-            try:
-                t = M[i][j]
-                l.append(t)
-            except IndexError: 
-                pass
-    return sum(l)-M[x][y] 
-M = [[1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]] 
-M = np.asarray(M)
-N = np.zeros(M.shape)
-for i in range(M.shape[0]):
-    for j in range(M.shape[1]):
-        N[i][j] = sumNeighbors(M, i, j)
-print("Original matrix:\n",M)
-print("Summed neighbors matrix:\n",N)
+i#include <iostream>
+using namespace std;
+class matrix
+{
+ int r1, c1, i, j, a1;
+ int a[10][10];
+
+public:int get()
+ {
+  cout << "Enter the row and column size for the  matrix\n";
+  cin >> r1;
+  cin >> c1;
+   cout << "Enter the elements of the matrix\n";
+  for (i = 0; i < r1; i++)
+  {
+   for (j = 0; j < c1; j++)
+   {
+    cin>>a[i][j];
+
+   }
+  }
+ 
+ 
+ };
+ void operator+(matrix a1)
+ {
+ int c[i][j];
+  
+   for (i = 0; i < r1; i++)
+   {
+    for (j = 0; j < c1; j++)
+    {
+     c[i][j] = a[i][j] + a1.a[i][j];
+    }
+   
+  }
+  cout<<"addition is\n";
+  for(i=0;i<r1;i++)
+  {
+   cout<<" ";
+   for (j = 0; j < c1; j++)
+   {
+    cout<<c[i][j]<<"\t";
+   }
+   cout<<"\n";
+  }
+
+ };
+
+  void operator-(matrix a2)
+ {
+ int c[i][j];
+  
+   for (i = 0; i < r1; i++)
+   {
+    for (j = 0; j < c1; j++)
+    {
+     c[i][j] = a[i][j] - a2.a[i][j];
+    }
+   
+  }
+  cout<<"subtraction is\n";
+  for(i=0;i<r1;i++)
+  {
+   cout<<" ";
+   for (j = 0; j < c1; j++)
+   {
+    cout<<c[i][j]<<"\t";
+   }
+   cout<<"\n";
+  }
+ };
+
+ void operator*(matrix a3)
+ {
+  int c[i][j];
+
+  for (i = 0; i < r1; i++)
+  {
+   for (j = 0; j < c1; j++)
+   {
+    c[i][j] =0;
+    for (int k = 0; k < r1; k++)
+    {
+     c[i][j] += a[i][k] * (a3.a[k][j]);
+    }
+  }
+  }
+  cout << "multiplication is\n";
+  for (i = 0; i < r1; i++)
+  {
+   cout << " ";
+   for (j = 0; j < c1; j++)
+   {
+    cout << c[i][j] << "\t";
+   }
+   cout << "\n";
+  }
+ };
+
+};
+
+int main()
+{
+ matrix p,q;
+ p.get();
+ q.get();
+ p + q;
+ p - q;
+ p * q;
+return 0;
+}
+
+
 
 ## Output:
-Original matrix:
- [[1 2 3]
- [4 5 6]
- [7 8 9]]
-Summed neighbors matrix:
- [[11. 19. 13.]
- [23. 40. 27.]
- [17. 31. 19.]]
+Enter the row and column size for the  matrix
+2
+2
+Enter the elements of the matrix
+6
+7
+5
+8
+Enter the row and column size for the  matrix
+2
+2
+Enter the elements of the matrix
+2
+3
+1
+4
+addition is
+ 8      10
+ 6      12
+subtraction is
+ 4      4
+ 4      4
+multiplication is
+ 19     46
+ 18     47
 
 
 10. 
