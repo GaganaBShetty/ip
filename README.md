@@ -335,5 +335,6 @@ cv2.destroyAllWindows()
 Original image:
 ![image](https://user-images.githubusercontent.com/72516233/105160016-96801b80-5ac4-11eb-9ea5-19ba9de5c594.png)
 
+Negation image:
 ![image](https://user-images.githubusercontent.com/72516233/105160299-ef4fb400-5ac4-11eb-85ad-ca77f3a64e2b.png)
 
