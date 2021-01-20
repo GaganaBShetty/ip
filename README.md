@@ -319,3 +319,17 @@ title("Negative Image")
 
 ## Output:
 ![image](https://user-images.githubusercontent.com/72516233/105158865-4c4a6a80-5ac3-11eb-9a53-29d968fda715.png)
+
+## 11.
+## Program code:
+import cv2
+img=cv2.imread("sketch.jpg")
+img_neg = 255-img
+cv2.imshow('Original',img)  
+cv2.waitKey(0)
+cv2.imshow('negation',img_neg)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+## Output:
+
