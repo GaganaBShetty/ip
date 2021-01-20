@@ -235,4 +235,28 @@ Summed neighbors matrix:
  [[11. 19. 13.]
  [23. 40. 27.]
  [17. 31. 19.]]
+ 
+ ## 8.Find neighbors of matrix
+ ## Program code:
+ 
+ import numpy as np
+i=0
+j=0
+a= np.array([[1,2,3,4,5], [2,3,4,5,6],[3,4,5,6,7],[4,5,6,7,8],[5,6,7,8,9]])
+print("a : ",str(a))
+def neighbors(radius, rowNumber, columnNumber):
+     return [[a[i][j] if  i >= 0 and i < len(a) and j >= 0 and j < len(a[0]) else 0
+                for j in range(columnNumber-1-radius, columnNumber+radius)]
+                    for i in range(rowNumber-1-radius, rowNumber+radius)]
+neighbors(1, 2, 3)
+
+## Output:
+
+a :  [[1 2 3 4 5]
+ [2 3 4 5 6]
+ [3 4 5 6 7]
+ [4 5 6 7 8]
+ [5 6 7 8 9]]
+
+[[2, 3, 4], [3, 4, 5], [4, 5, 6]]
 
