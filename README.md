@@ -296,5 +296,26 @@ Summed neighbors matrix:
 
 
 10. 
+## Program code:
+from pylab import*
+from skimage import img_as_float
+skI = imread("pic.jpg");    
+subplot(1, 2, 1),
+ 
+#displaying the RGB image
+imshow(skI);
+title("Original image");
+ 
+#levels of the 8-bit image
+L = 2 ^ 8;    
+ 
+# finding the negative                    
+neg = (L - 1) - skI;
+subplot(1, 2, 2),
+ 
+#displaying the negative image
+imshow(neg);
+title("Negative Image") 
+
 ## Output:
 ![image](https://user-images.githubusercontent.com/72516233/105158865-4c4a6a80-5ac3-11eb-9a53-29d968fda715.png)
