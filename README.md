@@ -450,6 +450,8 @@ plt.show()
 
 
 
+## 12.Gaama
+## Program code:
 
 import cv2
 import numpy as np
