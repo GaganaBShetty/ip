@@ -198,7 +198,7 @@ c.waitKey(0)
 ## Output:
 ![image](https://user-images.githubusercontent.com/72516233/104428110-e7c66300-5538-11eb-8374-1e9d2100f53a.png)
 
-## 7. FIND THE NEIGHBORHOOD VALUES OF THE MATRIX.
+## 7. PROGRAM TO FIND THE SUM OF NEIGHBORHOOD VALUES OF THE MATRIX.
 ## Description
 Here for each elements of the matrix.We are going to find the corresponding sum of matrix.
 numpy.zeros()or np.zeros Python function is used to create a matrix full of zeros.numpy.zeros() in python can be used when you initialize the weights.
@@ -236,31 +236,9 @@ Summed neighbors matrix:
  [23. 40. 27.]
  [17. 31. 19.]]
  
- ## 8.Find neighbors of matrix
- ## Program code:
  
- import numpy as np
-i=0
-j=0
-a= np.array([[1,2,3,4,5], [2,3,4,5,6],[3,4,5,6,7],[4,5,6,7,8],[5,6,7,8,9]])
-print("a : ",str(a))
-def neighbors(radius, rowNumber, columnNumber):
-     return [[a[i][j] if  i >= 0 and i < len(a) and j >= 0 and j < len(a[0]) else 0
-                for j in range(columnNumber-1-radius, columnNumber+radius)]
-                    for i in range(rowNumber-1-radius, rowNumber+radius)]
-neighbors(1, 2, 3)
 
-## Output:
-
-a :  [[1 2 3 4 5]
- [2 3 4 5 6]
- [3 4 5 6 7]
- [4 5 6 7 8]
- [5 6 7 8 9]]
-
-[[2, 3, 4], [3, 4, 5], [4, 5, 6]]
-
-## 9.C++ Programs to perform operator overloading.
+## 8.C++ Programs to perform operator overloading.
 ## Program code:
 i#include <iostream>
 using namespace std;
@@ -405,7 +383,7 @@ multiplication is
  18     47
 
 
-## 10. Finding the negative
+## 9. Finding the negative
 ## Descripion:
 Image is also known as a set of pixels. When we store an image in computers or digitally, it’s corresponding pixel values are stored. So, when we read an image to a variable using OpenCV in Python, the variable stores the pixel values of the image. When we try to negatively transform an image, the brightest areas are transformed into the darkest and the darkest areas are transformed into the brightest.
 ## Program code:
@@ -432,7 +410,7 @@ title("Negative Image")
 ![image](https://user-images.githubusercontent.com/72516233/105158865-4c4a6a80-5ac3-11eb-9a53-29d968fda715.png)
 
 ## 
-## Program code:
+## 10.Program code:
 import cv2
 import numpy as np
 img=cv2.imread("tiger.jpg")
