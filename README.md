@@ -463,7 +463,8 @@ cv2.imshow('Tiger',img3)
 cv2.waitKey(0)
 
 ## Output:
-![image](https://user-images.githubusercontent.com/72516233/105326327-7878f080-5b82-11eb-814f-6c8dbc0b1951.png)
+![image](https://user-images.githubusercontent.com/72516233/105338262-36ef4200-5b90-11eb-9249-3a4ee6df13ed.png)
+
 
 
 
