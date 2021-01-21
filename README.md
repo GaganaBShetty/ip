@@ -436,6 +436,16 @@ if cv2.waitKey(0) & 0xff == 27:
 ## Output:
 ![image](https://user-images.githubusercontent.com/72516233/105330002-a6603400-5b86-11eb-8acf-919d3fa9109f.png)
 
+## 11.Histogram
+## Program code:
+import cv2
+from matplotlib import pyplot as plt
+img = cv2.imread('quote.jpg',0)
+histr = cv2.calcHist([img],[0],None,[256],[0,256])
+plt.plot(histr)
+plt.show() 
+
+## Output:
 
 
 
