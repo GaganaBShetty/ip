@@ -455,11 +455,11 @@ plt.show()
 
 import cv2
 import numpy as np
-img=cv2.imread("tiger.jpg")
+img=cv2.imread("quote1.jpg")
 gamma_two_point_two=np.array(255*(img/255)**2.2,dtype='uint8')
 gamma_point_four=np.array(255*(img/255)**0.24,dtype='uint8')
 img3=cv2.hconcat([gamma_two_point_two,gamma_point_four])
-cv2.imshow('Tiger',img3)
+cv2.imshow('quote1',img3)
 cv2.waitKey(0)
 
 ## Output:
