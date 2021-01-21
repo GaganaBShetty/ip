@@ -450,7 +450,7 @@ plt.show()
 
 
 
-## 12.Gaama
+## 12.Program to perform Gamma transformation.
 ## Program code:
 
 import cv2
