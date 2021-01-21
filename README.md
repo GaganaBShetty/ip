@@ -410,7 +410,7 @@ title("Negative Image")
 ![image](https://user-images.githubusercontent.com/72516233/105158865-4c4a6a80-5ac3-11eb-9a53-29d968fda715.png)
 
 ## 
-## 10.Threshold
+## 10. Program to perform Threshold images
 ## Program code:
 import cv2  
 import numpy as np  
@@ -436,7 +436,7 @@ if cv2.waitKey(0) & 0xff == 27:
 ## Output:
 ![image](https://user-images.githubusercontent.com/72516233/105330002-a6603400-5b86-11eb-8acf-919d3fa9109f.png)
 
-## 11.a)Histogram
+## 11.a) Program to perform Histogram
 ## Program code:
 import cv2
 from matplotlib import pyplot as plt
