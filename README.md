@@ -436,7 +436,7 @@ if cv2.waitKey(0) & 0xff == 27:
 ## Output:
 ![image](https://user-images.githubusercontent.com/72516233/105330002-a6603400-5b86-11eb-8acf-919d3fa9109f.png)
 
-## 11.Histogram
+## 11.a)Histogram
 ## Program code:
 import cv2
 from matplotlib import pyplot as plt
@@ -447,6 +447,21 @@ plt.show()
 
 ## Output:
 ![image](https://user-images.githubusercontent.com/72516233/105336769-77e65700-5b8e-11eb-887c-45f5fd99905a.png)
+## 11.b)
+## Program code:
+import cv2
+import numpy as np
+img = cv2.imread('paint.jpg',0)
+kernel = np.ones((5,5),np.uint8)
+erosion = cv2.erode(img,kernel,iterations = 1)
+opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel)
+closing = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)
+cv2.imshow("opening",opening)
+cv2.imshow("closing",closing)
+cv2.waitKey(0)
+
+## Output:
+![image](https://user-images.githubusercontent.com/72516233/105340379-a6fec780-5b92-11eb-8567-b5040419efb9.png)
 
 
 
