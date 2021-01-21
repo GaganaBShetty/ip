@@ -431,3 +431,16 @@ title("Negative Image")
 ## Output:
 ![image](https://user-images.githubusercontent.com/72516233/105158865-4c4a6a80-5ac3-11eb-9a53-29d968fda715.png)
 
+## 
+## Program code:
+import cv2
+import numpy as np
+img=cv2.imread("tiger.jpg")
+gamma_two_point_two=np.array(255*(img/255)**2.2,dtype='uint8')
+gamma_point_four=np.array(255*(img/255)**0.24,dtype='uint8')
+img3=cv2.hconcat([gamma_two_point_two,gamma_point_four])
+cv2.imshow('Tiger',img3)
+cv2.waitKey(0)
+
+## Output:
+
