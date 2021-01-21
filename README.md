@@ -413,7 +413,7 @@ title("Negative Image")
 ## 10.Threshold
 ## Program code:
 ## Output:
-
+![image](https://user-images.githubusercontent.com/72516233/105330002-a6603400-5b86-11eb-8acf-919d3fa9109f.png)
 
 
 
