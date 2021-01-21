@@ -410,7 +410,15 @@ title("Negative Image")
 ![image](https://user-images.githubusercontent.com/72516233/105158865-4c4a6a80-5ac3-11eb-9a53-29d968fda715.png)
 
 ## 
-## 10.Program code:
+## 10.Threshold
+## Program code:
+## Output:
+
+
+
+
+
+
 import cv2
 import numpy as np
 img=cv2.imread("tiger.jpg")
@@ -422,4 +430,6 @@ cv2.waitKey(0)
 
 ## Output:
 ![image](https://user-images.githubusercontent.com/72516233/105326327-7878f080-5b82-11eb-814f-6c8dbc0b1951.png)
+
+
 
