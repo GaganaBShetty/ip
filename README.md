@@ -446,6 +446,7 @@ plt.plot(histr)
 plt.show() 
 
 ## Output:
+![image](https://user-images.githubusercontent.com/72516233/105336769-77e65700-5b8e-11eb-887c-45f5fd99905a.png)
 
 
 
